@@ -1,11 +1,11 @@
 import java.util.Objects;
 
 public class Cat {
-    String cat;
+    private String catMessage;
     public String getCat() {
-        return cat;
+        return catMessage;
     }
     public void setCat(String cat) {
-        this.cat = cat;
+        this.catMessage = cat;
     }
 }

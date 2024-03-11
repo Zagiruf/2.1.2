@@ -1,6 +1,8 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.sql.SQLOutput;
+
 public class App {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -10,6 +12,7 @@ public class App {
         Cat beanCat2 = (Cat) applicationContext.getBean("cat");
         System.out.println(bean == bean2);
         System.out.println(beanCat1 == beanCat2);
+        System.out.println(beanCat1.getCat());
         System.out.println(bean.getMessage());
     }
 }
